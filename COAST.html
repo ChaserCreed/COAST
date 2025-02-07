@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COAST | ASL Translator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Dark Mode Background */
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #121212);
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Starfield */
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+            opacity: 0.8;
+            transition: opacity 0.5s, transform 0.5s ease-out;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #00bcd4;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #00bcd4;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00bcd4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <nav>
+            <div class="logo">COAST</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Get Involved</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="hero">
+        <h1>COAST: Breaking Language Barriers</h1>
+        <p>Increasing the capabilities of AI-powered ASL translation with open-source technology.</p>
+    </section>
+    <div class="container">
+        <section class="section">
+            <h2>Our Mission</h2>
+            <p>COAST is a non-profit wristband project dedicated to bridging the gap between hearing and non-hearing individuals using hand-tracking sensors and AI.</p>
+        </section>
+        <section class="section">
+            <h2>How It Works</h2>
+            <p>Utilizing energy-efficient acoustic wave technology based on the EchoWrist project from researchers at Cornell University, COAST tracks hand movements and converts ASL into written language via Bluetooth.</p>
+        </section>
+        <section class="section">
+            <h2>Open-Source Commitment</h2>
+            <p>All hardware and software are published on GitHub, making it accessible for anyone to build and improve.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 COAST. Open-source for a more inclusive world.</p>
+    </footer>
+    <script src="star script.js"></script>
+</body>
+</html>
